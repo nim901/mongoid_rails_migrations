@@ -5,15 +5,15 @@ Gem::Specification.new do |s|
   s.name        = 'mongoid_rails_migrations'
   s.version     = MongoidRailsMigrations::VERSION
   s.summary     = 'Data migrations for Mongoid in Active Record style, minus column input.'
+  s.license     = 'MIT'
   s.description = 'Migrations for the migrator.'
 
-  # only tested with 1.9.1, but let's go for it
   s.required_ruby_version     = '>= 1.8.6'
   s.required_rubygems_version = '>= 1.3.6'
 
   s.author            = 'Alan Da Costa'
-  s.email             = 'alandacosta@gmail.com.com'
-  s.date              = %q{2012-09-04}
+  s.email             = 'alandacosta@gmail.com'
+  s.date              = %q{2015-01-01}
   s.homepage          = 'http://github.com/adacosta/mongoid_rails_migrations'
 
   s.require_paths = ['lib']
@@ -21,12 +21,12 @@ Gem::Specification.new do |s|
   s.test_files    = Dir['test/**/*']
   s.has_rdoc      = false
 
-  rails_version = '>= 3.2.0'
+  rails_version = '>= 4.2.0'
 
-  s.add_dependency('bundler', '>= 1.0.0')
-  s.add_dependency('rails',  rails_version)
-  s.add_dependency('railties',  rails_version)
-  s.add_dependency('activesupport',  rails_version)
-  s.add_development_dependency('mongoid', '>= 3.0.0')
-  s.add_development_dependency('test-unit', '>= 2.5.0')
+  s.add_runtime_dependency('bundler', '>= 1.0.0')
+  s.add_runtime_dependency('mongoid', '>= 4.0.0')
+  s.add_runtime_dependency('rails',  rails_version)
+  s.add_runtime_dependency('railties',  rails_version)
+  s.add_runtime_dependency('activesupport',  rails_version)
+  s.add_development_dependency 'rake'
 end

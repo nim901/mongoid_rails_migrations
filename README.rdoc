@@ -1,6 +1,7 @@
 == RELEASE NOTES
-* For rails >= 3.2.0 and mongoid >= 3.0.0, use version 1.0.0
-* For rails >= 3.0.0 (but < 3.2.0) and mongoid >= 2.0.0, use version 0.0.14
+* The most current release, 1.1.x, targets Mongoid >= 4.0.0 and Rails >= 4.2.0 .
+* For Rails >= 3.2.0 and Mongoid >= 3.0.0, use version 1.0.0 .
+* For Rails >= 3.0.0 (but < 3.2.0) and Mongoid >= 2.0.0, use version 0.0.14 .
 
 == SYNOPSIS
 * Data migrations for Mongoid. This fork modifies namespacing in an effort to allow sane migrations for when both Mongoid and ActiveRecord are used in the same application.
@@ -30,6 +31,9 @@
   * mongoid:reseed (handled by mongoid)
   * mongoid:version
 
+== TESTING
+```rake test:mongoid:migrations```
+
 == CREDITS TO
   * rails
   * mongoid
@@ -40,7 +44,7 @@ With that out of the way, on to the license.
 
 == LICENSE (MIT)
 
-Copyright © 2012: Alan Da Costa
+Copyright © 2013: Alan Da Costa
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'),
 to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish,
